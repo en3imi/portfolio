@@ -46,7 +46,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "RAG system with a curated knowledge base of official legal documents",
           "Hybrid search + reranker for precise retrieval — strict anti-hallucination instructions",
         ],
-        tools: ["Weaviate", "Perplexity LLM", "Streamlit"],
+        tools: ["Weaviate", "Perplexity LLM", "Streamlit", "Matryoshka Embeddings", "Reranker", "Hybrid Search", "Semantic Cache"],
         github: "https://github.com/en3imi/AILS",
       },
       {
@@ -74,7 +74,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
         bullets: [
           "Applied QLoRA for memory-efficient training on consumer-grade hardware",
         ],
-        tools: ["Transformers", "HuggingFace", "Zephyr-7B-Beta", "Kaggle"],
+        tools: ["Transformers", "HuggingFace", "Zephyr-7B-Beta", "Kaggle", "QLoRA", "Quantization"],
         github: "https://github.com/en3imi/NLP/blob/main/zephyr-7b-beta/zephyr-7b-beta.ipynb",
       },
       {
@@ -84,7 +84,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "Implemented RNN, LSTM, Bidirectional LSTM, and Multilayer LSTM architectures",
           "Compared performance across all variants for positive/negative classification",
         ],
-        tools: ["PyTorch", "HuggingFace", "Kaggle"],
+        tools: ["PyTorch", "Kaggle"],
         github: "https://github.com/en3imi/NLP/blob/main/SentimentClassificationLSTM/sentiment-classification-using-sequence-in-pytorch.ipynb",
       },
       {
@@ -133,7 +133,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "Achieved strong detection metrics on challenging overhead perspectives",
           "Built a live demo UI for end-to-end testing",
         ],
-        tools: ["Ultralytics YOLO", "Streamlit"],
+        tools: ["Ultralytics YOLO", "Streamlit", "Data Parallelism"],
         link: "https://drone-x-demo-x3hk3abumjjfzi3kgqiv2a.streamlit.app",
       },
       {
@@ -206,7 +206,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "Association rules to identify variables linked to depression and positive wellbeing",
           "Statistical hypothesis testing to validate findings",
         ],
-        tools: ["Python", "Statistics"],
+        tools: ["Python", "Statistics", "Orange Data Mining"],
         github: "https://github.com/en3imi/The-Wellbeing-Landscape-in-Jordan",
       },
       {
