@@ -10,12 +10,12 @@ const skillCategories = [
   {
     title: "Deep Learning & NLP",
     icon: <Code2 size={20} className="text-indigo-500" />,
-    skills: ["Transformers, BERT, AraBERT", "NER & Text Classification", "Sequence Models: RNN, LSTM, GRU", "CNNs & Computer Vision", "QLoRA & Fine-tuning", "Data Parallelism (Multi-GPU)", "Backpropagation & Math of DL"],
+    skills: ["Transformers, BERT, AraBERT", "NER & Text Classification", "Sequence Models: RNN, LSTM, GRU", "CNNs & Computer Vision", "LoRA & Fine-tuning", "Data Parallelism (Multi-GPU)", "Backpropagation & Math of DL"],
   },
   {
     title: "MLOps & Production",
     icon: <TerminalSquare size={20} className="text-indigo-500" />,
-    skills: ["ML in Production & Lifecycle Mgmt", "NVIDIA Triton Inference", "Docker, CI/CD"],
+    skills: ["ML in Production & Lifecycle Mgmt", "Docker, CI/CD"],
   },
   {
     title: "Data Science & Analytics",
@@ -25,7 +25,7 @@ const skillCategories = [
   {
     title: "Tools & Databases",
     icon: <LayoutTemplate size={20} className="text-indigo-500" />,
-    skills: ["n8n, FastAPI, Node.js, React.js", "PostgreSQL, Redis, Weaviate (Vector DB)", "PowerBI, Streamlit"],
+    skills: ["n8n, FastAPI, Ollama", "PostgreSQL, Redis, Weaviate (Vector DB)", "PowerBI, Streamlit", "Git, GitHub, Linux"],
   },
   {
     title: "Languages",
