@@ -22,6 +22,18 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px] opacity-50 pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto space-y-8">
+        {/* Profile Image */}
+        <div className="flex justify-center">
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 blur-xl opacity-40 scale-110" />
+            <img
+              src="/eyad.png"
+              alt="Eyad Al-Naimi"
+              className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top border-2 border-white/10 shadow-2xl"
+            />
+          </div>
+        </div>
+
         {/* Main Heading */}
         <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight text-neutral-100 leading-tight">
           Eyad Al-Naimi
