@@ -111,21 +111,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
   {
     category: "Computer Vision",
     projects: [
-      {
-        title: "Blood Pattern Classification",
-        award: "IEEE International Conference — May 18, 2026",
-        description: "First-authored research paper accepted at IEEE — outperforms previous works in both accuracy and methodology.",
-        bullets: [
-          "First Author: Eyad Al-Naimi",
-          "Techniques: LDA, PCA, T-SNE, Transformer Embeddings",
-          "Merged 2 datasets into a 3-class classification problem",
-          "Self-supervised transformer embeddings + SVM classifier — eliminates manual feature engineering",
-          "Achieved 97% avg accuracy and F1-score, surpassing prior state-of-the-art",
-        ],
-        tools: ["Transformers", "SVM", "PyTorch", "LDA", "PCA", "T-SNE"],
-        github: "https://github.com/en3imi/DS372-Forensics",
-        paper: "Accepted — Publishing May 18, 2026",
-      },
+
       {
         title: "YOLO Aerial Car Detection",
         description: "Fine-tuned YOLO on an aerial imagery dataset for real-time car detection from drone footage.",
