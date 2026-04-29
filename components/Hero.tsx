@@ -27,9 +27,9 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 blur-xl opacity-40 scale-110" />
             <img
-              src="/eyad.png"
+              src="/eyad.jpg"
               alt="Eyad Al-Naimi"
-              className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-top border-2 border-white/10 shadow-2xl"
+              className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-center border-2 border-white/10 shadow-2xl"
             />
           </div>
         </div>
