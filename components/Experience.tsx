@@ -62,24 +62,24 @@ const workshops = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-white/[0.02]">
+    <section id="experience" className="py-24 bg-white dark:bg-white/[0.02]">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-12">Experience</h2>
-        
-        <div className="space-y-8">
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-12">Experience</h2>
+
+        <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+            <div key={index} className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-8 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors">
               <div className="flex flex-col md:flex-row md:items-start justify-between mb-4 gap-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
-                  <p className="text-indigo-400 font-medium text-lg">@ {exp.company}</p>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">{exp.title}</h3>
+                  <p className="text-indigo-600 dark:text-indigo-400 font-medium">@ {exp.company}</p>
                 </div>
                 <div className="text-left md:text-right">
-                  <p className="text-neutral-300 font-medium">{exp.date}</p>
-                  <p className="text-neutral-500 text-sm">{exp.location}</p>
+                  <p className="text-gray-700 dark:text-neutral-300 font-medium text-sm">{exp.date}</p>
+                  <p className="text-gray-400 dark:text-neutral-500 text-xs">{exp.location}</p>
                 </div>
               </div>
-              <ul className="list-disc list-outside ml-5 space-y-2 text-neutral-400">
+              <ul className="list-disc list-outside ml-5 space-y-2 text-gray-500 dark:text-neutral-400 text-sm">
                 {exp.bullets.map((bullet, idx) => (
                   <li key={idx} className="leading-relaxed">{bullet}</li>
                 ))}
@@ -88,16 +88,18 @@ export default function Experience() {
           ))}
         </div>
 
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-12 mt-24">Workshops & Community</h2>
-        
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-12 mt-24">Workshops & Community</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {workshops.map((workshop, index) => (
-            <div key={index} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
-              <h3 className="text-xl font-bold text-white mb-2">{workshop.title}</h3>
-              <p className="text-indigo-400 font-medium mb-4">{workshop.company} <span className="text-neutral-500 text-sm ml-2">{workshop.date}</span></p>
-              <ul className="list-disc list-outside ml-5 space-y-2 text-neutral-400">
+            <div key={index} className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-8 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{workshop.title}</h3>
+              <p className="text-indigo-600 dark:text-indigo-400 font-medium mb-4">
+                {workshop.company} <span className="text-gray-400 dark:text-neutral-500 text-sm ml-2">{workshop.date}</span>
+              </p>
+              <ul className="list-disc list-outside ml-5 space-y-2 text-gray-500 dark:text-neutral-400 text-sm">
                 {workshop.bullets.map((bullet, idx) => (
-                  <li key={idx} className="leading-relaxed text-sm">{bullet}</li>
+                  <li key={idx} className="leading-relaxed">{bullet}</li>
                 ))}
               </ul>
             </div>

@@ -161,62 +161,62 @@ const projectCategories: { category: string; projects: Project[] }[] = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 bg-gray-50 dark:bg-background">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-12">Projects</h2>
-        
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-12">Projects</h2>
+
         <div className="space-y-16">
           {projectCategories.map((category, idx) => (
             <div key={idx}>
-              <h3 className="text-2xl font-bold text-indigo-400 mb-6 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-6 flex items-center gap-3">
                 <span className="w-8 h-[2px] bg-indigo-500/50"></span>
                 {category.category}
               </h3>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {category.projects.map((project, pIdx) => (
-                  <div key={pIdx} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col h-full">
+                  <div key={pIdx} className="bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors flex flex-col h-full">
                     <div className="mb-4">
-                      <h4 className="text-xl font-bold text-white mb-2">{project.title}</h4>
+                      <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{project.title}</h4>
                       {project.award && (
-                        <div className="inline-flex items-center gap-1 text-xs font-medium bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full mb-3">
+                        <div className="inline-flex items-center gap-1 text-xs font-medium bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 px-3 py-1 rounded-full mb-3">
                           <Trophy size={14} />
                           {project.award}
                         </div>
                       )}
-                      <p className="text-neutral-400 text-sm leading-relaxed mb-4">{project.description}</p>
-                      
+                      <p className="text-gray-500 dark:text-neutral-400 text-sm leading-relaxed mb-4">{project.description}</p>
+
                       {project.bullets.length > 0 && (
-                        <ul className="list-disc list-outside ml-4 space-y-1 text-sm text-neutral-300">
+                        <ul className="list-disc list-outside ml-4 space-y-1 text-sm text-gray-600 dark:text-neutral-300">
                           {project.bullets.map((bullet, bIdx) => (
                             <li key={bIdx}>{bullet}</li>
                           ))}
                         </ul>
                       )}
                     </div>
-                    
+
                     <div className="mt-auto pt-6">
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tools.map((tool, tIdx) => (
-                          <span key={tIdx} className="text-xs font-medium bg-white/10 text-neutral-300 px-2.5 py-1 rounded-md">
+                          <span key={tIdx} className="text-xs font-medium bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-neutral-300 px-2.5 py-1 rounded-md">
                             {tool}
                           </span>
                         ))}
                       </div>
-                      
+
                       <div className="flex items-center gap-3">
                         {project.github && (
-                          <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 border border-white/10 rounded-full hover:bg-white/20 text-white transition-colors" title="View Source">
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-full hover:bg-indigo-50 dark:hover:bg-white/20 text-gray-700 dark:text-white transition-colors" title="View Source">
                             <GithubIcon size={18} />
                           </a>
                         )}
                         {project.link && (
-                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 border border-white/10 rounded-full hover:bg-white/20 text-white transition-colors" title="View Project">
+                          <a href={project.link} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-full hover:bg-indigo-50 dark:hover:bg-white/20 text-gray-700 dark:text-white transition-colors" title="View Project">
                             <ExternalLink size={18} />
                           </a>
                         )}
                         {project.paper && (
-                          <div className="flex items-center gap-2 text-sm text-indigo-300">
+                          <div className="flex items-center gap-2 text-sm text-indigo-600 dark:text-indigo-300">
                             <FileText size={16} />
                             <span>{project.paper}</span>
                           </div>

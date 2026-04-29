@@ -3,52 +3,50 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-24 bg-gray-50 dark:bg-background">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-6">Let&apos;s Connect</h2>
-        <p className="text-lg text-neutral-400 mb-12 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-6">Let&apos;s Connect</h2>
+        <p className="text-lg text-gray-500 dark:text-neutral-400 mb-12 max-w-2xl mx-auto">
           Whether you have a question about my research, want to discuss an exciting AI project, or simply want to say hello, feel free to reach out. I&apos;m always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <a
             href="mailto:efalnaimi22@gmail.com"
-            className="flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors"
+            className="flex flex-col items-center justify-center p-8 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors"
           >
-            <div className="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center mb-4 text-indigo-400">
+            <div className="w-14 h-14 bg-indigo-50 dark:bg-white/5 rounded-full flex items-center justify-center mb-4 text-indigo-600 dark:text-indigo-400">
               <Mail size={24} />
             </div>
-            <h3 className="text-white font-bold mb-1">Email</h3>
-            <p className="text-neutral-400 text-sm">efalnaimi22@gmail.com</p>
+            <h3 className="text-gray-900 dark:text-white font-bold mb-1">Email</h3>
+            <p className="text-gray-500 dark:text-neutral-400 text-sm">efalnaimi22@gmail.com</p>
           </a>
 
           <a
             href="tel:+962782608645"
-            className="flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors"
+            className="flex flex-col items-center justify-center p-8 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl hover:border-emerald-300 dark:hover:border-emerald-500/50 transition-colors"
           >
-            <div className="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center mb-4 text-emerald-400">
+            <div className="w-14 h-14 bg-emerald-50 dark:bg-white/5 rounded-full flex items-center justify-center mb-4 text-emerald-600 dark:text-emerald-400">
               <Phone size={24} />
             </div>
-            <h3 className="text-white font-bold mb-1">Phone</h3>
-            <p className="text-neutral-400 text-sm">+962 78 260 8645</p>
+            <h3 className="text-gray-900 dark:text-white font-bold mb-1">Phone</h3>
+            <p className="text-gray-500 dark:text-neutral-400 text-sm">+962 78 260 8645</p>
           </a>
 
-          <div
-            className="flex flex-col items-center justify-center p-8 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors cursor-default"
-          >
-            <div className="w-14 h-14 bg-white/5 rounded-full flex items-center justify-center mb-4 text-rose-400">
+          <div className="flex flex-col items-center justify-center p-8 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl cursor-default">
+            <div className="w-14 h-14 bg-rose-50 dark:bg-white/5 rounded-full flex items-center justify-center mb-4 text-rose-500 dark:text-rose-400">
               <MapPin size={24} />
             </div>
-            <h3 className="text-white font-bold mb-1">Location</h3>
-            <p className="text-neutral-400 text-sm">Amman, Jordan</p>
+            <h3 className="text-gray-900 dark:text-white font-bold mb-1">Location</h3>
+            <p className="text-gray-500 dark:text-neutral-400 text-sm">Amman, Jordan</p>
           </div>
         </div>
-        
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
+
+        <div className="mt-24 pt-8 border-t border-gray-200 dark:border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-400 dark:text-neutral-500">
           <p>© 2026 Eyad Al-Naimi. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a href="https://github.com/en3imi" className="hover:text-white transition-colors">GitHub</a>
-            <a href="https://www.linkedin.com/in/eyad-naimi-1401ba276/" className="hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://github.com/en3imi" className="hover:text-gray-900 dark:hover:text-white transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/eyad-naimi-1401ba276/" className="hover:text-gray-900 dark:hover:text-white transition-colors">LinkedIn</a>
           </div>
         </div>
       </div>

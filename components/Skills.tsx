@@ -4,63 +4,32 @@ import { Award, Code2, Database, LayoutTemplate, BrainCircuit, TerminalSquare } 
 const skillCategories = [
   {
     title: "AI & Agents",
-    icon: <BrainCircuit size={20} className="text-indigo-400" />,
-    skills: [
-      "Multi-Agent Systems (CrewAI)",
-      "Agentic AI & Design Patterns",
-      "MCP (Model Context Protocol)",
-      "RAG Systems & Hybrid Search",
-      "Prompt Engineering",
-    ],
+    icon: <BrainCircuit size={20} className="text-indigo-500" />,
+    skills: ["Multi-Agent Systems (CrewAI)", "Agentic AI & Design Patterns", "MCP (Model Context Protocol)", "RAG Systems & Hybrid Search", "Prompt Engineering"],
   },
   {
     title: "Deep Learning & NLP",
-    icon: <Code2 size={20} className="text-indigo-400" />,
-    skills: [
-      "Transformers, BERT, AraBERT",
-      "NER & Text Classification",
-      "Sequence Models: RNN, LSTM, GRU",
-      "CNNs & Computer Vision",
-      "QLoRA & Fine-tuning",
-      "Data Parallelism (Multi-GPU)",
-      "Backpropagation & Math of DL",
-    ],
+    icon: <Code2 size={20} className="text-indigo-500" />,
+    skills: ["Transformers, BERT, AraBERT", "NER & Text Classification", "Sequence Models: RNN, LSTM, GRU", "CNNs & Computer Vision", "QLoRA & Fine-tuning", "Data Parallelism (Multi-GPU)", "Backpropagation & Math of DL"],
   },
   {
     title: "MLOps & Production",
-    icon: <TerminalSquare size={20} className="text-indigo-400" />,
-    skills: [
-      "ML in Production & Lifecycle Mgmt",
-      "NVIDIA Triton Inference",
-      "Docker, CI/CD",
-    ],
+    icon: <TerminalSquare size={20} className="text-indigo-500" />,
+    skills: ["ML in Production & Lifecycle Mgmt", "NVIDIA Triton Inference", "Docker, CI/CD"],
   },
   {
     title: "Data Science & Analytics",
-    icon: <Database size={20} className="text-indigo-400" />,
-    skills: [
-      "Machine Learning (Classical & Advanced)",
-      "Statistics & Statistical Testing",
-      "Time Series Analysis",
-      "ML Explainability",
-      "Customer Segmentation & Clustering",
-      "Association Rules",
-      "Big Data / PySpark",
-      "SQL, Excel",
-    ],
+    icon: <Database size={20} className="text-indigo-500" />,
+    skills: ["Machine Learning (Classical & Advanced)", "Statistics & Statistical Testing", "Time Series Analysis", "ML Explainability", "Customer Segmentation & Clustering", "Association Rules", "Big Data / PySpark", "SQL, Excel"],
   },
   {
     title: "Tools & Databases",
-    icon: <LayoutTemplate size={20} className="text-indigo-400" />,
-    skills: [
-      "n8n, FastAPI, Node.js, React.js",
-      "PostgreSQL, Redis, Weaviate (Vector DB)",
-      "PowerBI, Streamlit",
-    ],
+    icon: <LayoutTemplate size={20} className="text-indigo-500" />,
+    skills: ["n8n, FastAPI, Node.js, React.js", "PostgreSQL, Redis, Weaviate (Vector DB)", "PowerBI, Streamlit"],
   },
   {
     title: "Languages",
-    icon: <Code2 size={20} className="text-indigo-400" />,
+    icon: <Code2 size={20} className="text-indigo-500" />,
     skills: ["Python (Advanced)", "SQL"],
   },
 ];
@@ -87,22 +56,22 @@ const certifications = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-white/[0.02]">
+    <section id="skills" className="py-24 bg-white dark:bg-white/[0.02]">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-12">Skills & Expertise</h2>
-        
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-12">Skills & Expertise</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <div key={idx} className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-6 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-3 bg-white/5 rounded-xl">
+                <div className="p-3 bg-indigo-50 dark:bg-white/5 rounded-xl">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">{category.title}</h3>
               </div>
               <ul className="space-y-3">
                 {category.skills.map((skill, sIdx) => (
-                  <li key={sIdx} className="text-neutral-400 text-sm flex items-start gap-2">
+                  <li key={sIdx} className="text-gray-500 dark:text-neutral-400 text-sm flex items-start gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-1.5 flex-shrink-0"></span>
                     <span>{skill}</span>
                   </li>
@@ -112,23 +81,23 @@ export default function Skills() {
           ))}
         </div>
 
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-12 flex items-center gap-4">
-          <Award size={36} className="text-yellow-400" />
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-neutral-100 mb-12 flex items-center gap-4">
+          <Award size={36} className="text-yellow-500" />
           Certifications
         </h2>
-        
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+
+        <div className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-8">
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
             {certifications.map((cert, idx) => {
               const [title, issuer] = cert.split(" — ");
               return (
                 <li key={idx} className="flex items-start gap-3">
                   <div className="mt-1 flex-shrink-0">
-                    <div className="w-2 h-2 rounded-full bg-yellow-400/80 shadow-[0_0_8px_rgba(250,204,21,0.5)]"></div>
+                    <div className="w-2 h-2 rounded-full bg-yellow-400 shadow-[0_0_8px_rgba(250,204,21,0.5)]"></div>
                   </div>
                   <div>
-                    <p className="text-white text-sm font-medium">{title}</p>
-                    {issuer && <p className="text-neutral-500 text-xs mt-1">{issuer}</p>}
+                    <p className="text-gray-800 dark:text-white text-sm font-medium">{title}</p>
+                    {issuer && <p className="text-gray-400 dark:text-neutral-500 text-xs mt-1">{issuer}</p>}
                   </div>
                 </li>
               );
