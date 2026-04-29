@@ -97,6 +97,18 @@ const projectCategories: { category: string; projects: Project[] }[] = [
     ],
   },
   {
+    category: "NLP & IR",
+    projects: [
+      {
+        title: "Arabic Boolean Search Engine",
+        description: "Built a boolean search engine with full support for Arabic words and queries.",
+        bullets: [],
+        tools: ["Python", "Information Retrieval"],
+        github: "https://github.com/en3imi/IR/blob/main/IR_Boolean_Retrieval.ipynb",
+      },
+    ],
+  },
+  {
     category: "Computer Vision",
     projects: [
       {
@@ -130,6 +142,29 @@ const projectCategories: { category: string; projects: Project[] }[] = [
         bullets: [],
         tools: ["PyTorch"],
         github: "https://github.com/en3imi/DeepLearning",
+      },
+      {
+        title: "EfficientNet-B0 — Fashion Classification",
+        description: "Fine-tuned pretrained EfficientNet-B0 to classify clothing images (FashionMNIST).",
+        bullets: [],
+        tools: ["PyTorch", "EfficientNet-B0", "FashionMNIST"],
+        github: "https://github.com/en3imi/DeepLearning/blob/main/CNN-FashionMNIST/EfficientNet-B0.ipynb",
+      },
+      {
+        title: "CNN on MNIST from Scratch",
+        description: "Trained a small CNN on MNIST with advanced architectural components.",
+        bullets: [
+          "Added residual layers, batch normalization, and parameter initialization",
+        ],
+        tools: ["PyTorch", "MNIST"],
+        github: "https://github.com/en3imi/DeepLearning/blob/main/CNN_MNIST/Simple_CNN.ipynb",
+      },
+      {
+        title: "Vehicle Silhouette Classification — Statlog",
+        description: "Classified vehicle types (Bus, Opel, Saab, Van) based on geometric and shape-based silhouette features.",
+        bullets: [],
+        tools: ["PyTorch", "Statlog Dataset"],
+        github: "https://github.com/en3imi/DeepLearning/tree/main/Statlog%20with%20PyTorch",
       },
     ],
   },
@@ -202,6 +237,13 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "Applied PCA, T-SNE, and UMAP for dimensionality reduction before clustering",
         ],
         tools: ["Python", "Scikit-learn", "UMAP", "T-SNE"],
+      },
+      {
+        title: "PCA Dimensionality Reduction",
+        description: "Applied PCA to separate data using the minimum number of components.",
+        bullets: [],
+        tools: ["Python", "Scikit-learn", "PCA"],
+        github: "https://github.com/en3imi/Machine-Learning/blob/main/PCA%20on%20CancerData/PCA.ipynb",
       },
     ],
   },
