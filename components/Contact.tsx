@@ -5,9 +5,9 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-extrabold text-neutral-100 mb-6">Let's Connect</h2>
+        <h2 className="text-4xl font-extrabold text-neutral-100 mb-6">Let&apos;s Connect</h2>
         <p className="text-lg text-neutral-400 mb-12 max-w-2xl mx-auto">
-          Whether you have a question about my research, want to discuss an exciting AI project, or simply want to say hello, feel free to reach out. I'm always open to discussing new opportunities.
+          Whether you have a question about my research, want to discuss an exciting AI project, or simply want to say hello, feel free to reach out. I&apos;m always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
