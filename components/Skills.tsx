@@ -25,12 +25,12 @@ const skillCategories = [
   {
     title: "Tools & Databases",
     icon: <LayoutTemplate size={20} className="text-indigo-500" />,
-    skills: ["n8n, FastAPI, Ollama", "PostgreSQL, Redis, Weaviate (Vector DB)", "PowerBI, Streamlit", "Git, GitHub, Linux"],
+    skills: ["n8n, FastAPI, Ollama", "PostgreSQL, Redis, Weaviate (Vector DB), MongoDB (NoSQL)", "PowerBI, Streamlit", "Git, GitHub, Linux", "Anaconda, KNIME, Orange Data Mining"],
   },
   {
     title: "Languages",
     icon: <Code2 size={20} className="text-indigo-500" />,
-    skills: ["Python (Advanced)", "SQL"],
+    skills: ["Python", "SQL", "Java, C++, Scala"],
   },
 ];
 

@@ -51,7 +51,7 @@ const workshops = [
   {
     title: "ML / DL / NLP Workshop",
     company: "NASA Space Apps Challenge",
-    date: "Past Event",
+    date: "October 2025",
     bullets: [
       "Led a technical workshop for NASA Space Apps Challenge participants.",
       "Covered the full progression: Machine Learning → Deep Learning → NLP.",
