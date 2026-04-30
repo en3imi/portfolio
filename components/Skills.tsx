@@ -30,7 +30,7 @@ const skillCategories = [
   {
     title: "Languages",
     icon: <Code2 size={20} className="text-indigo-500" />,
-    skills: ["Python", "SQL", "Java, C++, Scala"],
+    skills: ["Python", "SQL", "Java", "C++", "Scala"],
   },
 ];
 
