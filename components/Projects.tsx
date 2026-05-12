@@ -34,6 +34,28 @@ const projectCategories: { category: string; projects: Project[] }[] = [
         tools: ["CrewAI", "n8n", "Docker", "FastAPI", "Tavily Search", "ScraperGraphAI", "Apify", "Slack"],
         github: "https://github.com/en3imi/Career-Hub-CrewAI-n8n-",
       },
+      {
+        title: "ProfusionAI — Agentic Data System",
+        description: "Advanced agentic chatbot for autonomous database querying, comparative analysis, and market trend forecasting.",
+        bullets: [
+          "Autonomous SQL execution: translates natural language into optimized database queries with zero-shot accuracy",
+          "Comparative Data Insights: generates automated tables and visual comparisons to highlight key data shifts",
+          "Executive Decision Support: analyzes market trends and internal data patterns to provide strategic recommendations",
+          "Robust Backend: secure session management and agent orchestration with JWT and Redis caching",
+        ],
+        tools: [
+          "PostgreSQL",
+          "Docker",
+          "Node.js",
+          "Python",
+          "FastAPI",
+          "CrewAI",
+          "OpenRouter",
+          "JWT",
+          "Redis",
+        ],
+        github: "https://github.com/en3imi/ProfusionAI",
+      },
     ],
   },
   {
