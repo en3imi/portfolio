@@ -35,7 +35,7 @@ const projectCategories: { category: string; projects: Project[] }[] = [
         github: "https://github.com/en3imi/Career-Hub-CrewAI-n8n-",
       },
       {
-        title: "ProfusionAI — Agentic Data System",
+        title: "Agentic Data System",
         description: "Advanced agentic chatbot for autonomous database querying, comparative analysis, and market trend forecasting.",
         bullets: [
           "Autonomous SQL execution: translates natural language into optimized database queries with zero-shot accuracy",
@@ -54,7 +54,6 @@ const projectCategories: { category: string; projects: Project[] }[] = [
           "JWT",
           "Redis",
         ],
-        github: "https://github.com/en3imi/ProfusionAI",
       },
     ],
   },
