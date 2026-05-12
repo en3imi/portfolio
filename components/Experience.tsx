@@ -43,9 +43,9 @@ const workshops = [
     company: "JUST",
     date: "May 9, 2026",
     bullets: [
-      "Invited speaker at Jordan University of Science and Technology.",
-      "Presenting Agentic AI to teaching staff and students.",
-      "Workshop organized by the academic staff themselves — a recognition of expertise.",
+      "Invited by the university's academic staff to deliver a specialized workshop on Agentic AI for faculty members and students.",
+      "The workshop covered fundamental and advanced topics including Large Language Models (LLMs), AI Agents, and Tool Calling.",
+      "Showcased a live practical demonstration of building a functional AI Agent using n8n, MCP, Memory, and Lovable.",
     ],
   },
   {

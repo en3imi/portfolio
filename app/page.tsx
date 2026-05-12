@@ -7,6 +7,8 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 
+import References from "@/components/References";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-background">
@@ -17,6 +19,7 @@ export default function Home() {
       <Achievements />
       <Projects />
       <Skills />
+      <References />
       <Contact />
     </main>
   );
