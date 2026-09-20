@@ -86,7 +86,7 @@ export default function Hero() {
                 {/* Card footer */}
                 <div className="mt-4 px-2 pb-2 text-center">
                   <p className="font-bold text-gray-900 dark:text-white">Eyad Al-Naimi</p>
-                  <p className="text-sm text-gray-500 dark:text-neutral-400">Solutions Manager @ Huawei</p>
+                  <p className="text-sm text-gray-500 dark:text-neutral-400">Data Scientist & AI Engineer</p>
                 </div>
               </div>
             </div>

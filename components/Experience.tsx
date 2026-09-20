@@ -2,17 +2,6 @@ import React from "react";
 
 const experiences = [
   {
-    title: "Solutions Manager",
-    company: "Huawei",
-    date: "Sep 2026 – Present",
-    location: "Amman, Jordan",
-    bullets: [
-      "Analyzing clients' business challenges and technical requirements to identify pain points and define target solutions.",
-      "Recommending tailored cloud solutions and designing optimal architectures leveraging Huawei Cloud services and infrastructure.",
-      "Serving as a cloud vendor solution consultant, guiding enterprise clients on service selection, architecture design, and cloud adoption best practices.",
-    ],
-  },
-  {
     title: "Digital Transformation & AI Intern",
     company: "Bank of Jordan",
     date: "Jul 2026 – Sep 2026",
