@@ -7,9 +7,9 @@ const experiences = [
     date: "Sep 2026 – Present",
     location: "Amman, Jordan",
     bullets: [
-      "Spearheading the solution architecture, strategy, and end-to-end technical delivery of enterprise AI, Cloud, and intelligent computing solutions.",
-      "Collaborating closely with enterprise clients and executive stakeholders to translate high-level business requirements into robust, high-performance architectural solutions.",
-      "Driving technical solution proposals, client engagement, and technological roadmaps to accelerate digital transformation.",
+      "Analyzing clients' business challenges and technical requirements to identify pain points and define target solutions.",
+      "Recommending tailored cloud solutions and designing optimal architectures leveraging Huawei Cloud services and infrastructure.",
+      "Serving as a cloud vendor solution consultant, guiding enterprise clients on service selection, architecture design, and cloud adoption best practices.",
     ],
   },
   {

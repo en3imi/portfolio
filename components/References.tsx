@@ -13,7 +13,7 @@ const references = [
   {
     name: "Dr. Yanal Alahmad",
     role: "Assistant Professor",
-    department: "Department of Software Engineering",
+    department: "Head of Department of Software Engineering",
     university: "Jordan University of Science and Technology",
     email: "ynalahmad@just.edu.jo",
     link: "https://www.just.edu.jo/eportfolio/Pages/Default.aspx?email=ynalahmad",
