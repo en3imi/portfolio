@@ -2,14 +2,39 @@ import React from "react";
 
 const experiences = [
   {
-    title: "AI Engineer",
-    company: "Protech",
-    date: "Nov 2025 – Present",
+    title: "Solutions Manager",
+    company: "Huawei",
+    date: "Sep 2026 – Present",
     location: "Amman, Jordan",
     bullets: [
-      "Building enterprise agentic systems for data analysis, trend forecasting, and strategic decision support",
-      "Designing multi-agent pipelines that combine internal database querying with real-world news analysis",
-      "Tools: Docker, FastAPI, PostgreSQL, Redis, CrewAI, Node.js, React.js, CI/CD",
+      "Spearheading the solution architecture, strategy, and end-to-end technical delivery of enterprise AI, Cloud, and intelligent computing solutions.",
+      "Collaborating closely with enterprise clients and executive stakeholders to translate high-level business requirements into robust, high-performance architectural solutions.",
+      "Driving technical solution proposals, client engagement, and technological roadmaps to accelerate digital transformation.",
+    ],
+  },
+  {
+    title: "Digital Transformation & AI Intern",
+    company: "Bank of Jordan",
+    date: "Jul 2026 – Sep 2026",
+    location: "Amman, Jordan",
+    bullets: [
+      "Participated in an intensive Digital Transformation training program within the IT department, where I learned how to manage and optimize MSSQL databases, deploying Java applications through Tomcat and JBoss, and executing basic Linux commands, in addition to analyzing application logs to identify and troubleshoot deployment issues.",
+      "Led a team of interns from different departments to develop an AI solution to help grow the bank's customer base, including researching the bank's operations and available data, analyzing feasibility and ROI, and presenting the final solution to a committee of department heads and the bank's CEO.",
+      "Selected as a hiring nominee out of 50 interns across the organization, driven by my deep domain knowledge and exceptional work ethic.",
+      "Tools: MSSQL, Java, Apache Tomcat, JBoss, Linux, AI Solution Architecture",
+    ],
+  },
+  {
+    title: "AI Engineer",
+    company: "Protech",
+    date: "Oct 2025 – Jul 2026",
+    location: "Amman, Jordan",
+    bullets: [
+      "Designed and developed an enterprise-grade Agentic AI platform that enables users to analyze, query, and visualize organizational data using natural language prompts. The system allows users to interact with company data conversationally while the underlying agents handle data analysis and generate meaningful visual insights.",
+      "The platform was built with a secure and scalable backend architecture using Python and FastAPI, with JWT-based authentication and Role-Based Access Control (RBAC) to enforce data access permissions based on user identity and role. A dedicated database layer was implemented to securely store conversations and chat history, enabling persistent and contextual interactions.",
+      "The entire application was containerized using Docker, providing a consistent and portable deployment environment. Grafana was integrated for system observability, enabling monitoring of application health, performance, and operational metrics.",
+      "🏆 Achievement: Selected among the Top 10 Projects in the Hashemite Kingdom of Jordan in 2026 at the National Technology Parade (NTP13).",
+      "Tools: Python, FastAPI, Docker, PostgreSQL, Redis, CrewAI, React.js, Grafana, CI/CD",
     ],
   },
   {
@@ -79,10 +104,34 @@ export default function Experience() {
                   <p className="text-gray-400 dark:text-neutral-500 text-xs">{exp.location}</p>
                 </div>
               </div>
-              <ul className="list-disc list-outside ml-5 space-y-2 text-gray-500 dark:text-neutral-400 text-sm">
-                {exp.bullets.map((bullet, idx) => (
-                  <li key={idx} className="leading-relaxed">{bullet}</li>
-                ))}
+              <ul className="space-y-3 text-gray-600 dark:text-neutral-400 text-sm md:text-[15px]">
+                {exp.bullets.map((bullet, idx) => {
+                  const isAchievement = bullet.startsWith("🏆");
+                  const isTools = bullet.startsWith("Tools:");
+
+                  if (isAchievement) {
+                    return (
+                      <li key={idx} className="mt-4 p-4 bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 rounded-xl text-amber-900 dark:text-amber-300 font-medium text-sm leading-relaxed">
+                        {bullet}
+                      </li>
+                    );
+                  }
+
+                  if (isTools) {
+                    return (
+                      <li key={idx} className="mt-3 pt-3 border-t border-gray-200/70 dark:border-white/10 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+                        {bullet}
+                      </li>
+                    );
+                  }
+
+                  return (
+                    <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                      <span>{bullet}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -97,9 +146,12 @@ export default function Experience() {
               <p className="text-indigo-600 dark:text-indigo-400 font-medium mb-4">
                 {workshop.company} <span className="text-gray-400 dark:text-neutral-500 text-sm ml-2">{workshop.date}</span>
               </p>
-              <ul className="list-disc list-outside ml-5 space-y-2 text-gray-500 dark:text-neutral-400 text-sm">
+              <ul className="space-y-2.5 text-gray-600 dark:text-neutral-400 text-sm">
                 {workshop.bullets.map((bullet, idx) => (
-                  <li key={idx} className="leading-relaxed">{bullet}</li>
+                  <li key={idx} className="flex items-start gap-2.5 leading-relaxed">
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 mt-2 flex-shrink-0" />
+                    <span>{bullet}</span>
+                  </li>
                 ))}
               </ul>
             </div>

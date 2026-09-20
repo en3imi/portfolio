@@ -46,7 +46,6 @@ const projectCategories: { category: string; projects: Project[] }[] = [
         tools: [
           "PostgreSQL",
           "Docker",
-          "Node.js",
           "Python",
           "FastAPI",
           "CrewAI",

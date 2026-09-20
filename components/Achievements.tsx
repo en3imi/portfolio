@@ -1,11 +1,11 @@
 import React from "react";
-import { Trophy, BookOpen, Award } from "lucide-react";
+import { Trophy, BookOpen, Award, ExternalLink } from "lucide-react";
 
 const research = [
   {
     title: "Blood Pattern Classification Using Transformer-Based Image Embeddings",
     conference: "ACM Conference on Data Engineering and Intelligent Systems",
-    date: "(Submitted and got accepted) March 2026",
+    link: "https://dl.acm.org/doi/10.1145/3812734.3813710",
     bullets: [
       "Developed an end-to-end CV pipeline using a Vision Transformer model with a linear SVM to classify multi-class bloodstain patterns.",
       "Extracted 384-dimensional embeddings and trained an SVM classifier, achieving 97.88% accuracy and outperforming traditional handcrafted feature engineering methods and previous related work in forensic analysis."
@@ -43,12 +43,19 @@ export default function Achievements() {
           {research.map((item, index) => (
             <div key={index} className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl p-8 hover:border-indigo-300 dark:hover:border-indigo-500/50 transition-colors">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
-              <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                 <p className="text-indigo-600 dark:text-indigo-400 font-medium">{item.conference}</p>
-                <span className="hidden md:inline text-gray-300 dark:text-gray-700">•</span>
-                <p className="text-emerald-600 dark:text-emerald-400 font-medium text-sm bg-emerald-50 dark:bg-emerald-500/10 px-3 py-1 rounded-full w-fit">
-                  {item.date}
-                </p>
+                {item.link && (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-all duration-200 shadow-md shadow-indigo-500/20 hover:scale-[1.02] active:scale-[0.98] w-fit"
+                  >
+                    <span>Explore Publication</span>
+                    <ExternalLink size={15} />
+                  </a>
+                )}
               </div>
               <ul className="list-disc list-outside ml-5 space-y-3 text-gray-600 dark:text-neutral-400 text-sm md:text-base leading-relaxed">
                 {item.bullets.map((bullet, idx) => (

@@ -37,11 +37,9 @@ export default function Hero() {
 
             <p className="text-gray-600 dark:text-neutral-400 text-lg leading-relaxed max-w-lg">
               <span className="text-gray-900 dark:text-neutral-200 font-medium">
-                Specialist in Agentic Solutions and Intelligent Systems.
-              </span>
-              {" "}I take ideas from early research and design all the way through to production deployment.
-              <br /><br />
-              Currently developing enterprise agentic systems at Protech, conducting active scientific research, with published work at an international conference, and an ongoing role in advancing AI education across Jordan.
+                Specialist in Data Science workflows and AI Solutions.
+              </span>{" "}
+              I take ideas from early research and design all the way through to production deployment.
             </p>
 
             {/* Social Links */}
@@ -88,7 +86,7 @@ export default function Hero() {
                 {/* Card footer */}
                 <div className="mt-4 px-2 pb-2 text-center">
                   <p className="font-bold text-gray-900 dark:text-white">Eyad Al-Naimi</p>
-                  <p className="text-sm text-gray-500 dark:text-neutral-400">AI Engineer @ Protech</p>
+                  <p className="text-sm text-gray-500 dark:text-neutral-400">Solutions Manager @ Huawei</p>
                 </div>
               </div>
             </div>
