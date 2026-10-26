@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Eyad Al-Naimi | Data Scientist & AI Engineer",
-  description: "Portfolio of Eyad Al-Naimi, a Data Scientist and AI Engineer specializing in machine learning, data analysis, and AI solutions.",
+  title: "Eyad Al-Naimi | Cloud Core Product Manager",
+  description: "Portfolio of Eyad Al-Naimi, Cloud Core Product Manager specializing in cloud core solutions, AI, and data science.",
 };
 
 export default function RootLayout({

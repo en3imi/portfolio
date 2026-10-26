@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-3">
               <p className="text-indigo-600 dark:text-indigo-400 font-medium tracking-widest text-sm uppercase">
-                Data Scientist & AI Engineer
+                Cloud Core Product Manager
               </p>
               <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-neutral-100 leading-tight">
                 Eyad<br />Al-Naimi
@@ -86,7 +86,7 @@ export default function Hero() {
                 {/* Card footer */}
                 <div className="mt-4 px-2 pb-2 text-center">
                   <p className="font-bold text-gray-900 dark:text-white">Eyad Al-Naimi</p>
-                  <p className="text-sm text-gray-500 dark:text-neutral-400">Data Scientist & AI Engineer</p>
+                  <p className="text-sm text-gray-500 dark:text-neutral-400">Cloud Core Product Manager @ Huawei</p>
                 </div>
               </div>
             </div>

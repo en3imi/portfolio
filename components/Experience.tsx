@@ -2,6 +2,18 @@ import React from "react";
 
 const experiences = [
   {
+    title: "Cloud Core Product Manager",
+    company: "Huawei",
+    date: "Sep 2026 – Present",
+    location: "Amman, Jordan",
+    bullets: [
+      "Leading product strategy and technical solution planning for Cloud Core network architecture and enterprise cloud services.",
+      "Analyzing clients' business challenges and technical requirements to identify pain points and define tailored, high-performance target solutions.",
+      "Serving as a trusted cloud vendor solution consultant, guiding enterprise clients on service selection, architecture design, and cloud adoption best practices.",
+      "Tools: Huawei Cloud Core, 5G Core, Cloud Native Architecture, NFV, Telco Cloud Solutions",
+    ],
+  },
+  {
     title: "Digital Transformation & AI Intern",
     company: "Bank of Jordan",
     date: "Jul 2026 – Sep 2026",
